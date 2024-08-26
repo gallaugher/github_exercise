@@ -8,11 +8,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .resizable()
+                .scaledToFit()
+            
+            Text("V. 1.0")
+                .font(.largeTitle)
+                .fontWeight(.black)
         }
         .padding()
+        .foregroundStyle(.red)
     }
 }
 
